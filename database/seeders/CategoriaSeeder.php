@@ -15,43 +15,71 @@ class CategoriaSeeder extends Seeder
     public function run(): void
     {
         DB::table('categorias')->insert([
-            'nombre' => 'Café',
-            'icono' => 'cafe',
+            'nombre' => 'Laptop',
+            'icono' => 'laptop',
             'created_at' => Carbon::now(),
             'updated_at' => Carbon::now(),
         ]);
 
         DB::table('categorias')->insert([
-            'nombre' => 'Hamburguesas',
-            'icono' => 'hamburguesa',
+            'nombre' => 'Impresora',
+            'icono' => 'impresora',
             'created_at' => Carbon::now(),
             'updated_at' => Carbon::now(),
         ]);
 
         DB::table('categorias')->insert([
-            'nombre' => 'Pizzas',
-            'icono' => 'pizza',
+            'nombre' => 'Tablet',
+            'icono' => 'tablet',
             'created_at' => Carbon::now(),
             'updated_at' => Carbon::now(),
         ]);
 
         DB::table('categorias')->insert([
-            'nombre' => 'Donas',
-            'icono' => 'dona',
+            'nombre' => 'Monitor',
+            'icono' => 'monitor',
             'created_at' => Carbon::now(),
             'updated_at' => Carbon::now(),
         ]);
 
         DB::table('categorias')->insert([
-            'nombre' => 'Pasteles',
-            'icono' => 'pastel',
+            'nombre' => 'Mouse',
+            'icono' => 'mouse',
             'created_at' => Carbon::now(),
             'updated_at' => Carbon::now(),
         ]);
 
         DB::table('categorias')->insert([
-            'nombre' => 'Galletas',
-            'icono' => 'galletas',
+            'nombre' => 'Audifonos',
+            'icono' => 'audifonos',
+            'created_at' => Carbon::now(),
+            'updated_at' => Carbon::now(),
+        ]);
+
+        DB::table('categorias')->insert([
+            'nombre' => 'Cable',
+            'icono' => 'cable',
+            'created_at' => Carbon::now(),
+            'updated_at' => Carbon::now(),
+        ]);
+
+        DB::table('categorias')->insert([
+            'nombre' => 'Router',
+            'icono' => 'router',
+            'created_at' => Carbon::now(),
+            'updated_at' => Carbon::now(),
+        ]);
+
+        DB::table('categorias')->insert([
+            'nombre' => 'Disco',
+            'icono' => 'disco',
+            'created_at' => Carbon::now(),
+            'updated_at' => Carbon::now(),
+        ]);
+
+        DB::table('categorias')->insert([
+            'nombre' => 'Procesador',
+            'icono' => 'procesador',
             'created_at' => Carbon::now(),
             'updated_at' => Carbon::now(),
         ]);
