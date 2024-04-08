@@ -3,7 +3,8 @@
     "framework": null,
     "routes": [
         {
-            "src": "/(.*)"
+            "src": "/(.*)",
+            "dest": "/index.*"
         }
     ],
     "env": {
