@@ -1,1 +1,1 @@
-release: composer install
+release: php artisan migrate
