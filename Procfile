@@ -1,0 +1,1 @@
+release: composer install && php artisan optimize:clear && php artisan config:cache && php artisan view:cache && php artisan migrate:reset && php artisan db:wash && php artisan storage:link && php artisan migrate --force
