@@ -1,1 +1,1 @@
-release:php artisan migrate && php artisan db:seed
+release:php artisan migrate
