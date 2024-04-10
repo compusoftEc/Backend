@@ -11,6 +11,11 @@ class CategoriaController extends Controller
     public function index()
     {
         // return response()->json(['categorias' => Categoria::all()]);
-        return new CategoriaCollection(Categoria::all());
+        //return new CategoriaCollection(Categoria::all());
+
+        return response()->json([
+            'status' => 200,
+            'message' => 'Categorias recuperadas correctamente'
+        ]);
     }
 }
