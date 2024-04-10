@@ -31,22 +31,12 @@ class AuthController extends Controller
     }
     public function requestRegister(RegistroRequest $request)
     {
-        // Validar el registro
-        $data  = $request->validated();
-
-        // Crear el usuario
-        $user = User::create([
-            'name' => $data['name'],
-            'email' => $data['email'],
-            'number' => $data['number'],
-            // Encriptar el password
-        ]);
 
         // Retornar una respuesta
-        return [
-            'token' => $user->createToken('token')->plainTextToken,
-            'user' => $user
-        ];
+        return response()->json([
+            'name' => 'Abigail',
+            'state' => 'CA'
+        ]);
     }
 
     public function login(LoginRequest $request)
