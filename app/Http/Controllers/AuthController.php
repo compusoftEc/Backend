@@ -29,9 +29,8 @@ class AuthController extends Controller
             'user' => $user
         ];
     }
-    public function requestRegister(RegistroRequest $request)
+    public function requestRegister()
     {
-
         // Retornar una respuesta
         return response()->json([
             'name' => 'Abigail',
