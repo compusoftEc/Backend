@@ -23,5 +23,5 @@ Route::middleware('auth:sanctum')->group(function () {
 
 // Autenticacion
 Route::post('/registro', [AuthController::class, 'register'])->middleware('api');
-Route::post('/Sregistro', [AuthController::class, 'requestRegister']);
+Route::get('/Sregistro', [AuthController::class, 'requestRegister'])->middleware('api');
 Route::post('/login', [AuthController::class, 'login'])->middleware('api');

@@ -29,7 +29,7 @@ class AuthController extends Controller
             'user' => $user
         ];
     }
-    public function requestRegister()
+    public function requestRegister(Request $request)
     {
         // Retornar una respuesta
         return response()->json([
