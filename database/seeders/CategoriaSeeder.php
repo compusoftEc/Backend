@@ -15,28 +15,28 @@ class CategoriaSeeder extends Seeder
     public function run(): void
     {
         DB::table('categorias')->insert([
-            'nombre' => 'Laptop',
+            'nombre' => 'Laptops',
             'icono' => 'laptop',
             'created_at' => Carbon::now(),
             'updated_at' => Carbon::now(),
         ]);
 
         DB::table('categorias')->insert([
-            'nombre' => 'Impresora',
+            'nombre' => 'Impresoras',
             'icono' => 'impresora',
             'created_at' => Carbon::now(),
             'updated_at' => Carbon::now(),
         ]);
 
         DB::table('categorias')->insert([
-            'nombre' => 'Tablet',
+            'nombre' => 'Tablets',
             'icono' => 'tablet',
             'created_at' => Carbon::now(),
             'updated_at' => Carbon::now(),
         ]);
 
         DB::table('categorias')->insert([
-            'nombre' => 'Monitor',
+            'nombre' => 'Monitores',
             'icono' => 'monitor',
             'created_at' => Carbon::now(),
             'updated_at' => Carbon::now(),
@@ -57,22 +57,22 @@ class CategoriaSeeder extends Seeder
         ]);
 
         DB::table('categorias')->insert([
-            'nombre' => 'Cable',
-            'icono' => 'cable',
+            'nombre' => 'Celulares',
+            'icono' => 'celular',
             'created_at' => Carbon::now(),
             'updated_at' => Carbon::now(),
         ]);
 
         DB::table('categorias')->insert([
-            'nombre' => 'Router',
-            'icono' => 'router',
+            'nombre' => 'Protección eléctrica',
+            'icono' => 'fuente',
             'created_at' => Carbon::now(),
             'updated_at' => Carbon::now(),
         ]);
 
         DB::table('categorias')->insert([
-            'nombre' => 'Disco',
-            'icono' => 'disco',
+            'nombre' => 'Camaras',
+            'icono' => 'camara',
             'created_at' => Carbon::now(),
             'updated_at' => Carbon::now(),
         ]);
