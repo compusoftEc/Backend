@@ -1,1 +1,1 @@
-release: php artisan migrate
+release: php artisan migrate --path=/database/migrations/2024_04_17_042054_create_metodo_pagos_table.php
