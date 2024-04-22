@@ -1,1 +1,1 @@
-release: php artisan migrate:reset
+release: php artisan migrate --force
