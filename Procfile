@@ -1,1 +1,1 @@
-release: php artisan migrate --path=/database/migrations/2024_04_03_031623_alter_number_column_from_users_table.php
+release: php artisan migrate --path=/database/migrations/2024_04_03_032718_add_status_colum_to_users_table.php
