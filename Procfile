@@ -1,1 +1,1 @@
-release:
+release: php artisan db:seed
