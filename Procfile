@@ -1,1 +1,1 @@
-release: php artisan migrate --path=/database/migrations/2024_02_27_221457_create_pedido_productos_table.php
+release: php artisan migrate --path=/database/migrations/2024_02_27_224437_add_admin_column_to_users_table.php
