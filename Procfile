@@ -1,1 +1,1 @@
-release:php artisan db:wipe 
+release: php artisan db:wipe 
