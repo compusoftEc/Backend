@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use App\Http\Resources\PedidoCollection;
 use App\Models\OrdenProducto;
 use App\Models\Pedido;
+use App\Models\MetodoPago;
 use App\Models\PedidoProducto;
 use Carbon\Carbon;
 use Illuminate\Http\Request;
@@ -20,7 +21,8 @@ class PedidoController extends Controller
     public function index()
     {
 
-        return new PedidoCollection(Pedido::with('user')->with('productos')->where('estado', 0)->get());
+        //return new PedidoCollection(Pedido::with('user')->with('productos')->where('estado', 0)->get());
+        return new PedidoCollection(Pedido::with('user')->with('productos')->with('metodoPago')->where('estado', 0)->get());
     }
 
     /**
@@ -36,24 +38,24 @@ class PedidoController extends Controller
         $pedido = new Pedido;
         $pedido->user_id = Auth::user()->id;
         $pedido->total = $request->total;
+        $pedido->metodo_pago_id = $request->metodoPago;
         $pedido->save();
 
         // Obtener el ID del pedido
         $id = $pedido->id;
 
-        // Obtener los productos
+        // Obtener array de los productos
         $productos = $request->productos;
 
         // Formatear un arreglo 
         $pedido_producto = [];
 
+        // Metodo de pago
         foreach ($productos as $producto) {
             $pedido_producto[] = [
                 'pedido_id' => $id,
                 'producto_id' => $producto['id'],
                 'cantidad' => $producto['cantidad'],
-                'created_at' => Carbon::now(),
-                'updated_at' => Carbon::now()
             ];
         }
 

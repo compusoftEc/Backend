@@ -77,11 +77,11 @@ class CategoriaSeeder extends Seeder
             'updated_at' => Carbon::now(),
         ]);
 
-        DB::table('categorias')->insert([
-            'nombre' => 'Procesador',
-            'icono' => 'procesador',
-            'created_at' => Carbon::now(),
-            'updated_at' => Carbon::now(),
-        ]);
+        // DB::table('categorias')->insert([
+        //     'nombre' => 'Procesador',
+        //     'icono' => 'procesador',
+        //     'created_at' => Carbon::now(),
+        //     'updated_at' => Carbon::now(),
+        // ]);
     }
 }

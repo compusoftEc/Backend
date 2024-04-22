@@ -8,6 +8,7 @@ use Illuminate\Database\Eloquent\Model;
 class Pedido extends Model
 {
     use HasFactory;
+    protected $table = 'pedidos';
 
     public function user()
     {
@@ -16,5 +17,10 @@ class Pedido extends Model
     public function productos()
     {
         return $this->belongsToMany(Producto::class, 'pedido_productos', 'pedido_id', 'producto_id')->withPivot('cantidad');
+    }
+
+    public function metodoPago()
+    {
+        return $this->belongsTo(MetodoPago::class);
     }
 }

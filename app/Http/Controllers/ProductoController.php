@@ -13,12 +13,16 @@ class ProductoController extends Controller
      * 
      * @return \Illuminate\Http\Response
      */
-    public function index()
+    public function index($idCategoria = 0)
     {
         //
+        if ($idCategoria == 0) {
+            return new ProductoCollection(Producto::where('disponible', 1)->orderBy('id', 'DESC')->get());
+        } else {
+            return new ProductoCollection(Producto::where('disponible', 1)->where('categoria_id', $idCategoria)->orderBy('id', 'DESC')->get());
+        }
 
         // dd('hola');
-        return new ProductoCollection(Producto::where('disponible', 1)->orderBy('id', 'DESC')->get());
     }
     /**
      * Store a newly created resource in storage.
