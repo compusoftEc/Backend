@@ -43,7 +43,7 @@ class CategoriaSeeder extends Seeder
         ]);
 
         DB::table('categorias')->insert([
-            'nombre' => 'Mouse',
+            'nombre' => 'Teclado y Mouse',
             'icono' => 'mouse',
             'created_at' => Carbon::now(),
             'updated_at' => Carbon::now(),
@@ -71,7 +71,7 @@ class CategoriaSeeder extends Seeder
         ]);
 
         DB::table('categorias')->insert([
-            'nombre' => 'Camaras',
+            'nombre' => 'Cámaras',
             'icono' => 'camara',
             'created_at' => Carbon::now(),
             'updated_at' => Carbon::now(),
