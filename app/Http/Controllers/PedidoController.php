@@ -22,7 +22,7 @@ class PedidoController extends Controller
     {
 
         //return new PedidoCollection(Pedido::with('user')->with('productos')->where('estado', 0)->get());
-        return new PedidoCollection(Pedido::with('user')->with('productos')->with('metodoPago')->where('estado', 0)->get());
+        return new PedidoCollection(Pedido::with('user')->with(['productos', 'metodoPago'])->where('estado', 0)->get());
     }
 
     /**
