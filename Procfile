@@ -1,1 +1,1 @@
-release: php artisan db:seed
+release: php artisan db:wipe
