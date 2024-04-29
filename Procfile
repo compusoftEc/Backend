@@ -1,1 +1,1 @@
-release: php artisan migrate
+release: 
