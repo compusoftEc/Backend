@@ -11,12 +11,8 @@ return new class extends Migration
      */
     public function up(): void
     {
-        Schema::create('pedidos', function (Blueprint $table) {
-            $table->id();
-            $table->foreignId('user_id')->constrained()->onDelete('cascade');
-            $table->double('total');
-            $table->boolean('estado')->default(0);
-            $table->timestamps();
+        Schema::table('pedidos', function (Blueprint $table) {
+            $table->foreignId('metodo_pago_id')->constrained('metodo_pagos');
         });
     }
 
@@ -25,6 +21,8 @@ return new class extends Migration
      */
     public function down(): void
     {
-        Schema::dropIfExists('pedidos');
+        Schema::table('pedidos', function (Blueprint $table) {
+            $table->dropColumn('metodo_pago_id');
+        });
     }
 };
