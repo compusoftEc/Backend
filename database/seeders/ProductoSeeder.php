@@ -64,7 +64,7 @@ class ProductoSeeder extends Seeder
                             'nombre' =>  "LAPTOP ASUS TUF GAMING F17 FX707ZC4",
                             'precio' => 1492.09,
                             'imagen' => "laptopasusgaming _001",
-                            'desCorta' =>"12th Gen Intel® Core™ i7-12700H Processor 2.3 GHz,Ram 16gb, 1TB SSD, Tarjeta de video 4gb gddr6 nvidia® geforce rtx™  3050  display 17¨fhd free 
+                            'desCorta' =>"12th Gen Intel® Core™ i7-12700H Processor 2.3 GHz,Ram 16gb, 1TB SSD, Tarjeta de video 4gb, display 17¨fhd free 
                              dos color mecha gray",
                             'descripción' => "ASUS TUF GAMING F17 FX707ZC4 CI 7-12700H 
                             RAM 16GB (1 SLOT 16GB + 1 SLOT SO-DIMM DDR4 - MAX 32GB) SSD 1TB 
@@ -182,6 +182,67 @@ class ProductoSeeder extends Seeder
                             'updated_at' => Carbon::now(),
     
             ),
+
+
+            array(
+                'nombre' =>  "PROYECTOR VIEWSONIC PA700X",
+                'precio' => 641.23,
+                'imagen' => "",
+                'desCorta' =>"ViewSonic PA700X 4500 lúmenes XGA proyector de alto brillo-vertical para negocios y educación",
+                'descripción' => "Proyector Marca ViewSonic:
+                -4.500 lúmenes ANSI, para imágenes nítidas en cualquier entorno    
+                -Imágenes de hasta 300 a menor coste por pulgada ​                                                    
+                -Conexión fácil y flexible: doble puerto HDMI, puerto USB-A​
+                -Colores vivos con la tecnología SuperColor™ de ViewSonic​
+                -Cómoda actualización de software mediante conexión USB   
+                -Resolucion: 1024 x 768 px(XGA)",
+                'link'=>"https://www.viewsonic.com/es/products/projectors/PA700X",
+                'categoria_id' => 5,
+                'disponible' => true,
+                'created_at' => Carbon::now(),
+                'updated_at' => Carbon::now(),
+
+),
+
+
+array(
+        'nombre' =>  "PROYECTOR VIEWSONIC PA503W",
+        'precio' => 659.36,
+        'imagen' => "",
+        'desCorta' =>"PROYECTOR VIEWSONIC PA503W - PROYECTOR DLP - 3D",
+        'descripción' => "Proyector Marca ViewSonic:                      
+         -3800 lúmenes con una relación de contraste de 22.000:1 para presentaciones brillantes y nítidas
+        -Eficiencia energética y hasta 15,000 horas de vida de la lámpara (en modo SuperEco)
+        -La tecnología SuperColour™ ofrece colores vivos y precisos
+        -5 modos de color para adaptarse a distintos escenarios de los usuarios
+        -La opción V Keystone permite ajustar la imagen fácilmente       
+        -Resolucion: 1280 x 800 px (WXGA)",
+        'link'=>"https://www.viewsonic.com/es/products/sheet/PA503W",
+        'categoria_id' => 5,
+        'disponible' => true,
+        'created_at' => Carbon::now(),
+        'updated_at' => Carbon::now(),
+
+),
+
+
+array(
+        'nombre' =>  "PROYECTOR BENQ MW560",
+        'precio' => 970.60,
+        'imagen' => "",
+        'desCorta' =>"PROYECTOR BENQ MW560 DLP WXGA 4000 LUMENES 1280X800 VGA WHITE",
+        'descripción' => "Proyector Marca Benq:      
+        -4000 lúmenes ANSI de alto brillo y 20.000:1 de alto contraste
+        -Modo Exclusivo de Revisión de Datos Para Texto y Gráficos en Gran Detalle
+        -El modo SmartEco ahorra energía de la lámpara hasta un 70%           
+        -Resolucion: 800 x 600 px (SVGA)",
+        'link'=>"https://www.benq.com/es-la/proyector/uso-multiple/mw560.html",
+        'categoria_id' => 5,
+        'disponible' => true,
+        'created_at' => Carbon::now(),
+        'updated_at' => Carbon::now(),
+
+),
                 
                     array(
                             'nombre' =>  "COMBO TECLADO MOUSE LENOVO INALÁMBRICO",

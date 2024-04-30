@@ -36,7 +36,7 @@ class CategoriaSeeder extends Seeder
         ]);
 
         DB::table('categorias')->insert([
-            'nombre' => 'Monitores',
+            'nombre' => 'Proyectores y Monitores',
             'icono' => 'monitor',
             'created_at' => Carbon::now(),
             'updated_at' => Carbon::now(),
